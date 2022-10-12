@@ -1,3 +1,6 @@
+# codelite workspace
+*.workspace
+
 # Logs
 logs
 *.log
