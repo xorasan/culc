@@ -2665,21 +2665,21 @@ var preferences;
 		},
 	};
 	var buildnum = preferences.get('#', 1);
-	if ( buildnum != 80 ) {
+	if ( buildnum != 99 ) {
 		preferences.pop(3); // ruid
 		preferences.pop('@'); // last sync time
 		preferences.pop(4); // list view cache
 		preferences.pop(6); // initial sync done
 	}
-	preferences.set('#', 80);
+	preferences.set('#', 99);
 	Hooks.set('ready', function () {
-		if ( buildnum != 80 ) {
+		if ( buildnum != 99 ) {
 			$.taxeer('seeghahjadeedah', function () {
 				Hooks.run('seeghahjadeedah', buildnum);
 			}, 2000);
 		}
 	});
-	$.log.s( 80 );
+	$.log.s( 99 );
 })();
 var activity;
 ;(function(){
@@ -3162,10 +3162,10 @@ var settings, currentad;
 ;(function(){
 	var settingsitems = [
 		['reportbug', 0, function () {
-			activity.abrad(myemail+'?subject='+appname+' bug '+80);
+			activity.abrad(myemail+'?subject='+appname+' bug '+99);
 		}],
 		['requestfeat', 0, function () {
-			activity.abrad(myemail+'?subject='+appname+' request '+80);
+			activity.abrad(myemail+'?subject='+appname+' request '+99);
 		}],
 		['timeformat', function () {
 			var is24 = preferences.get(24, 1);
@@ -4693,6 +4693,7 @@ var culc, culclist;
 			}
 		};
 		mfateeh.sooraat.style.zoom = (1 / window.devicePixelRatio);
+		navigator.spatialNavigationEnabled = false;
 		webapp.statusbarpadding();
 		culclist = list( mfateeh.list ).idprefix('culc')
 						.listitem('culcitem');

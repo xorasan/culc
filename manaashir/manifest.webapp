@@ -1,11 +1,12 @@
 {
-	"version": "0.8.0",
+	"version": "0.9.9",
 	"name": "culc",
 	"origin": "app://culc.xorasan",
 	"subtitle": "",
 	"description": "",
 	"fullscreen": "",
 	"cursor": "false",
+	"type": "privileged",
 	"launch_path": "/index.html",
 	"icons": {
 		"56": "/0.png",
@@ -25,5 +26,8 @@
 	"default_locale": "en-US",
 	"chrome": {
 		"statusbar": "overlap"
+	},
+	"permissions": {
+		"spatialnavigation-app-manage": {}
 	}
 }

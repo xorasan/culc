@@ -63,3 +63,9 @@ ishtamal
 	softkeys.touch
 xudoo3
 sinf     zaboon
+type	privileged
+access
+	spatialnavigation-app-manage	{}
+
+
+

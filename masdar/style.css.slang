@@ -16,6 +16,16 @@
 .sooraat .row .matn
 	font-size			350%
 	text-shadow			0 0 15px @primary, 0 0 15px @primary
-.maHdood
-	overflow			auto
-	max-height			70vh
+
+//if max-width = 640px
+//	.maHdood
+//		overflow			auto
+//		max-height			70vh
+
+
+
+
+
+
+
+

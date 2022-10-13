@@ -264,7 +264,6 @@ allcaps             allcaps
 skenter             skenter
 heading             heading
 sooraat             sooraat
-maHdood             maHdood
 author              author
 openad              openad
 skhelp              skhelp

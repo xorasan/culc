@@ -61,7 +61,8 @@ var culc, culclist;
 			}
 		};
 		mfateeh.sooraat.style.zoom = (1 / window.devicePixelRatio);
-		
+
+		navigator.spatialNavigationEnabled = false;
 		webapp.statusbarpadding();
 
 		culclist = list( mfateeh.XPO.list ).idprefix('XPO.culc')
