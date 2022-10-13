@@ -1,5 +1,11 @@
+# mudeer
+*linked*
+eqonaat/
+insha/
+
 # codelite workspace
 *.workspace
+.codelite/
 
 # Logs
 logs

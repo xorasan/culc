@@ -1,0 +1,28 @@
+{
+	"version": "0.6.8",
+	"name": "culc",
+	"origin": "app://culc.xorasan",
+	"subtitle": "",
+	"description": "",
+	"fullscreen": "",
+	"launch_path": "/index.html",
+	"icons": {
+		"56": "/0.png",
+		"112": "/1.png"
+	},
+	"developer": {
+		"name": "Hasan Xorasani",
+		"url": "mailto:hxorasani@gmail.com"
+	},
+	"locales": {
+		"en-US": {
+			"name": "culc",
+			"subtitle": "",
+			"description": ""
+		}
+	},
+	"default_locale": "en-US",
+	"chrome": {
+		"statusbar": "overlap"
+	}
+}
