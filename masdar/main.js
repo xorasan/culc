@@ -5,6 +5,9 @@ var culc, culclist;
 	var mfateeh, soorahuxra;
 
 	culc = {
+		tarkeeb: function () {
+			
+		},
 		rafa3: function (item) {
 			mfateeh.rafa3zir.click();
 			soorahuxra = culclist.axavmfateeh(item.uid);
@@ -82,6 +85,7 @@ var culc, culclist;
 			});
 		});
 		culclist.select();
+		culc.jaddad();
 	});
 	Hooks.set('XPO.viewready', function (args) {
 		switch (args.XPO.name) {
@@ -91,6 +95,9 @@ var culc, culclist;
 				softkeys.set(K.sl, function () {
 					culclist.press(K.sl);
 				}, 0, 'XPO.iconedit');
+				softkeys.set('5', function () {
+					culc.tarkeeb();
+				}, '5', 'XPO.iconsearch');
 
 				softkeys.list.basic(culclist);
 				break;

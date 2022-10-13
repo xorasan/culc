@@ -1123,6 +1123,11 @@ html, body, svg text {
 .sooraat .row .matn {
 	font-size:350%;
 }
+	
+.maHdood {
+	overflow:auto;
+	max-height:70vh;
+}
 </style>
 
 		</head>
@@ -1234,7 +1239,7 @@ html, body, svg text {
 					<div class=grow>
 						<b data-i18n=build></b>
 						
-						<div> 68</div>
+						<div> 80</div>
 						</div>
 					
 					<div class=grow>
@@ -1288,20 +1293,22 @@ html, body, svg text {
 			<input hidden data-id=input></div>
 		
 		<div data-view=main>
-			<div class=fixed data-id=list></div>
+			<div data-id=list></div>
 			
 			<input type=file hidden data-id=rafa3zir>
-			<div class="sooraat flex vertical relative" data-id=sooraat>
-				<div class="awwal row flex" data-id=awwal>
-					<div class="awwalm matn center" data-id=awwalm></div>
-					</div>
-				
-				<div class="caani row flex" data-id=caani>
-					<div class="caanim matn center" data-id=caanim></div>
-					</div>
-				
-				<div class="calic row flex" data-id=calic>
-					<div class="calicm matn center" data-id=calicm></div>
+			<div class=maHdood data-fullscreen=1>
+				<div class="sooraat flex vertical relative" data-id=sooraat>
+					<div class="awwal row flex" data-id=awwal>
+						<div class="awwalm matn center" data-id=awwalm></div>
+						</div>
+					
+					<div class="caani row flex" data-id=caani>
+						<div class="caanim matn center" data-id=caanim></div>
+						</div>
+					
+					<div class="calic row flex" data-id=calic>
+						<div class="calicm matn center" data-id=calicm></div>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -1,10 +1,11 @@
 {
-	"version": "0.6.8",
+	"version": "0.8.0",
 	"name": "culc",
 	"origin": "app://culc.xorasan",
 	"subtitle": "",
 	"description": "",
 	"fullscreen": "",
+	"cursor": "false",
 	"launch_path": "/index.html",
 	"icons": {
 		"56": "/0.png",

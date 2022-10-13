@@ -2665,21 +2665,21 @@ var preferences;
 		},
 	};
 	var buildnum = preferences.get('#', 1);
-	if ( buildnum != 68 ) {
+	if ( buildnum != 80 ) {
 		preferences.pop(3); // ruid
 		preferences.pop('@'); // last sync time
 		preferences.pop(4); // list view cache
 		preferences.pop(6); // initial sync done
 	}
-	preferences.set('#', 68);
+	preferences.set('#', 80);
 	Hooks.set('ready', function () {
-		if ( buildnum != 68 ) {
+		if ( buildnum != 80 ) {
 			$.taxeer('seeghahjadeedah', function () {
 				Hooks.run('seeghahjadeedah', buildnum);
 			}, 2000);
 		}
 	});
-	$.log.s( 68 );
+	$.log.s( 80 );
 })();
 var activity;
 ;(function(){
@@ -3162,10 +3162,10 @@ var settings, currentad;
 ;(function(){
 	var settingsitems = [
 		['reportbug', 0, function () {
-			activity.abrad(myemail+'?subject='+appname+' bug '+68);
+			activity.abrad(myemail+'?subject='+appname+' bug '+80);
 		}],
 		['requestfeat', 0, function () {
-			activity.abrad(myemail+'?subject='+appname+' request '+68);
+			activity.abrad(myemail+'?subject='+appname+' request '+80);
 		}],
 		['timeformat', function () {
 			var is24 = preferences.get(24, 1);
@@ -4644,6 +4644,8 @@ var culc, culclist;
 	'use strict';
 	var mfateeh, soorahuxra;
 	culc = {
+		tarkeeb: function () {
+		},
 		rafa3: function (item) {
 			mfateeh.rafa3zir.click();
 			soorahuxra = culclist.axavmfateeh(item.uid);
@@ -4710,6 +4712,7 @@ var culc, culclist;
 			});
 		});
 		culclist.select();
+		culc.jaddad();
 	});
 	Hooks.set('viewready', function (args) {
 		switch (args.name) {
@@ -4718,6 +4721,9 @@ var culc, culclist;
 				softkeys.set(K.sl, function () {
 					culclist.press(K.sl);
 				}, 0, 'iconedit');
+				softkeys.set('5', function () {
+					culc.tarkeeb();
+				}, '5', 'iconsearch');
 				softkeys.list.basic(culclist);
 				break;
 		}
