@@ -36,6 +36,8 @@ eqonaat
 	arrowback
 	morevert
 	edit
+	filedownload
+	flare
 taraajim
 	en
 ishtamal

@@ -2,11 +2,32 @@
 var culc, culclist;
 ;(function(){
 	'use strict';
-	var mfateeh, soorahuxra;
+	var mfateeh, soorahuxra, trkb3dd = 0, trkbt3dl = 'trkb';
+	
+	var i3daltarkeeb = function () {
+		trkb3dd = preferences.get(trkbt3dl, 1);
+		if (trkb3dd == 0) trkb3dd = 1;
+		else if (trkb3dd == 1) trkb3dd = 2;
+		else if (trkb3dd == 2) trkb3dd = 3;
+//		else if (trkb3dd == 3) trkb3dd = 4;
+//		else if (trkb3dd == 4) trkb3dd = 5;
+		else trkb3dd = 0;
+		culc.tarkeeb();
+		preferences.set(trkbt3dl, trkb3dd);
+	};
 
 	culc = {
+		iHmal: function () {
+			html2canvas(mfateeh.sooraat).then(function (cnv) {
+				var e = document.createElement('a');
+				e.href = cnv.toDataURL('image/jpeg', .65);
+				e.download = 'culc-'+new Date().getTime();
+				e.click();
+				e.remove();
+			});
+		},
 		tarkeeb: function () {
-			
+			setdata(mfateeh.sooraat, trkbt3dl, trkb3dd);
 		},
 		rafa3: function (item) {
 			mfateeh.rafa3zir.click();
@@ -86,7 +107,19 @@ var culc, culclist;
 			});
 		});
 		culclist.select();
+
+		if (preferences) trkb3dd = preferences.get(trkbt3dl, 1) || 0;
+		
+		settings.adaaf('XPO.tarkeeb', function () {
+			trkb3dd = preferences.get(trkbt3dl, 1);
+			culc.tarkeeb();
+			return trkb3dd;
+		}, function () {
+			i3daltarkeeb();
+		});
+
 		culc.jaddad();
+		culc.tarkeeb();
 	});
 	Hooks.set('XPO.viewready', function (args) {
 		switch (args.XPO.name) {
@@ -97,8 +130,12 @@ var culc, culclist;
 					culclist.press(K.sl);
 				}, 0, 'XPO.iconedit');
 				softkeys.set('5', function () {
+					i3daltarkeeb();
 					culc.tarkeeb();
-				}, '5', 'XPO.iconsearch');
+				}, '5', 'XPO.iconflare');
+				softkeys.set('3', function () {
+					culc.iHmal();
+				}, '3', 'XPO.iconfiledownload');
 
 				softkeys.list.basic(culclist);
 				break;

@@ -4,6 +4,7 @@ iconhourglassempty  iconhourglassempty
 softkeystouchdpad   softkeystouchdpad
 statusbarpadding    statusbarpadding
 keydownlongpress    keydownlongpress
+iconfiledownload    iconfiledownload
 rununtilconsumed    rununtilconsumed
 statusbarshadow     statusbarshadow
 backstackdialog     backstackdialog
@@ -119,6 +120,7 @@ tertiaryl           tertiaryl
 tertiaryd           tertiaryd
 tertiaryt           tertiaryt
 icontheme           icontheme
+iconflare           iconflare
 _onfinish           _onfinish
 _registry           _registry
 beforepop           beforepop
@@ -211,6 +213,7 @@ noselect            noselect
 vertical            vertical
 extradim            extradim
 tawassa3            tawassa3
+tarkeeb             tarkeeb
 profile             profile
 aqrabaa             aqrabaa
 quality             quality
@@ -472,6 +475,7 @@ bare                bare
 row2                row2
 row1                row1
 item                item
+trkb                trkb
 uid                 uid
 off                 off
 age                 age

@@ -4,7 +4,7 @@ body
 	
 	[view=main]
 		[id=list]
-		input	@type(file)		@hidden		[id=rafa3zir]
+		input	@type(file)	@accept(image/*)	@hidden	[id=rafa3zir]
 		[fullscreen=1] .maHdood
 			.sooraat .flex .vertical .relative [id=sooraat]
 				.awwal .row .flex [id=awwal]
