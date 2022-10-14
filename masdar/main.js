@@ -73,6 +73,12 @@ var culc, culclist;
 	};
 
 	Hooks.set('XPO.ready', function () {
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('/_.js').then(function () {
+				$.log('sw regd')
+			});
+		}
+
 		mfateeh = view.mfateeh('XPO.main');
 		mfateeh.rafa3zir.oninput = function () {
 			var file = mfateeh.rafa3zir.files[0];

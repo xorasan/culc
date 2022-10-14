@@ -1,5 +1,5 @@
 {
-	"version": "1.3.1",
+	"version": "1.3.2",
 	"name": "culc",
 	"origin": "app://culc.xorasan",
 	"subtitle": "",
@@ -8,10 +8,6 @@
 	"cursor": "false",
 	"type": "privileged",
 	"launch_path": "/index.html",
-	"icons": {
-		"56": "/0.png",
-		"112": "/1.png"
-	},
 	"developer": {
 		"name": "Hasan Xorasani",
 		"url": "mailto:hxorasani@gmail.com"
@@ -29,5 +25,15 @@
 	},
 	"permissions": {
 		"spatialnavigation-app-manage": {}
-	}
+	},
+	"icons": [
+		{
+			"src": "/0.png",
+			"sizes": "56x56"
+		},
+		{
+			"src": "/1.png",
+			"sizes": "112x112"
+		}
+	]
 }

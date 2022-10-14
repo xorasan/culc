@@ -2666,21 +2666,21 @@ var preferences;
 		},
 	};
 	var buildnum = preferences.get('#', 1);
-	if ( buildnum != 131 ) {
+	if ( buildnum != 132 ) {
 		preferences.pop(3); // ruid
 		preferences.pop('@'); // last sync time
 		preferences.pop(4); // list view cache
 		preferences.pop(6); // initial sync done
 	}
-	preferences.set('#', 131);
+	preferences.set('#', 132);
 	Hooks.set('ready', function () {
-		if ( buildnum != 131 ) {
+		if ( buildnum != 132 ) {
 			$.taxeer('seeghahjadeedah', function () {
 				Hooks.run('seeghahjadeedah', buildnum);
 			}, 2000);
 		}
 	});
-	$.log.s( 131 );
+	$.log.s( 132 );
 })();
 var activity;
 ;(function(){
@@ -3163,10 +3163,10 @@ var settings, currentad;
 ;(function(){
 	var settingsitems = [
 		['reportbug', 0, function () {
-			activity.abrad(myemail+'?subject='+appname+' bug '+131);
+			activity.abrad(myemail+'?subject='+appname+' bug '+132);
 		}],
 		['requestfeat', 0, function () {
-			activity.abrad(myemail+'?subject='+appname+' request '+131);
+			activity.abrad(myemail+'?subject='+appname+' request '+132);
 		}],
 		['timeformat', function () {
 			var is24 = preferences.get(24, 1);
@@ -4706,6 +4706,11 @@ var culc, culclist;
 		}); },
 	};
 	Hooks.set('ready', function () {
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('/sw.js').then(function () {
+				$.log('sw regd')
+			});
+		}
 		mfateeh = view.mfateeh('main');
 		mfateeh.rafa3zir.oninput = function () {
 			var file = mfateeh.rafa3zir.files[0];
