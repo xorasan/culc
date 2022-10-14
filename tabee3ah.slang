@@ -66,6 +66,7 @@ ishtamal
 xudoo3
 sinf     zaboon
 type	privileged
+jazar	/culc
 access
 	spatialnavigation-app-manage	{}
 
