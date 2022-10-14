@@ -74,7 +74,7 @@ var culc, culclist;
 
 	Hooks.set('XPO.ready', function () {
 		if ('serviceWorker' in navigator) {
-			navigator.serviceWorker.register('/_.js').then(function () {
+			navigator.serviceWorker.register('_.js').then(function () {
 				$.log('sw regd')
 			});
 		}

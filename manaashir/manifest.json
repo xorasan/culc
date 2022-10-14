@@ -1,5 +1,5 @@
 {
-	"version": "1.3.2",
+	"version": "1.3.4",
 	"name": "culc",
 	"origin": "app://culc.xorasan",
 	"subtitle": "",
@@ -28,11 +28,11 @@
 	},
 	"icons": [
 		{
-			"src": "/0.png",
+			"src": "0.png",
 			"sizes": "56x56"
 		},
 		{
-			"src": "/1.png",
+			"src": "1.png",
 			"sizes": "112x112"
 		}
 	]
