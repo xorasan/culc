@@ -2666,21 +2666,21 @@ var preferences;
 		},
 	};
 	var buildnum = preferences.get('#', 1);
-	if ( buildnum != 144 ) {
+	if ( buildnum != 145 ) {
 		preferences.pop(3); // ruid
 		preferences.pop('@'); // last sync time
 		preferences.pop(4); // list view cache
 		preferences.pop(6); // initial sync done
 	}
-	preferences.set('#', 144);
+	preferences.set('#', 145);
 	Hooks.set('ready', function () {
-		if ( buildnum != 144 ) {
+		if ( buildnum != 145 ) {
 			$.taxeer('seeghahjadeedah', function () {
 				Hooks.run('seeghahjadeedah', buildnum);
 			}, 2000);
 		}
 	});
-	$.log.s( 144 );
+	$.log.s( 145 );
 })();
 var activity;
 ;(function(){
@@ -3163,10 +3163,10 @@ var settings, currentad;
 ;(function(){
 	var settingsitems = [
 		['reportbug', 0, function () {
-			activity.abrad(myemail+'?subject='+appname+' bug '+144);
+			activity.abrad(myemail+'?subject='+appname+' bug '+145);
 		}],
 		['requestfeat', 0, function () {
-			activity.abrad(myemail+'?subject='+appname+' request '+144);
+			activity.abrad(myemail+'?subject='+appname+' request '+145);
 		}],
 		['timeformat', function () {
 			var is24 = preferences.get(24, 1);
