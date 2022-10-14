@@ -2,8 +2,8 @@
 
 @font-face
 	font-family		'xorasani-nasx'
-	src				url('xorasani-nasx.woff') format('woff'),
-					url('xorasani-nasx.ttf') format('truetype')
+	src				url('JAZAR/xorasani-nasx.woff') format('woff'),
+					url('JAZAR/xorasani-nasx.ttf') format('truetype')
 .sooraat
 	width		600px
 	height		1000px
