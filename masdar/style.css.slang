@@ -28,6 +28,11 @@
 	font-size			350%
 	font-family			xorasani-nasx, Segoe UI
 	text-shadow			0 0 35px @primary, 0 0 35px @primary, 0 0 1px @primary
+@font-face
+	font-family		'xorasani-nasx'
+	src				url('xorasani-nasx.woff') format('woff'),
+					url('xorasani-nasx.ttf') format('truetype')
+
 
 //if max-width = 640px
 //	.maHdood
