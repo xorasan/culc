@@ -105,10 +105,10 @@ var culc, culclist;
 			if (item && key === K.sl) culc.adaaf(item);
 		};
 
-		[1, 2, 3].forEach(function (item, i) {
+		['text', 'متن', 'فۧين تِࣴي'].forEach(function (item, i) {
 			culclist.set({
-				uid: item,
-				matn: 'matn '+item,
+				uid: (i+1),
+				matn: item,
 //				soorah: item,
 			});
 		});
